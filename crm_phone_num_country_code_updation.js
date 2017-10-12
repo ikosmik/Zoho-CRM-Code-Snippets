@@ -4,8 +4,8 @@
 * This code is in Deluge scripting language.
 * This is used to check an incoming lead to see if their phone num has the country dialing code.
 * If not, then this code would fetch the appropriate code based on the'Country' field value from the Lead.
-* Then this would 
-* while creating a new Lead
+* Then this would update the 'Phone' field in the CRM Lead to reflect the new number which has the country code prefixed.
+*
 * Crafted with ♥ from India, iKosmik
 */
 
