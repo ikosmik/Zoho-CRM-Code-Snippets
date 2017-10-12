@@ -6,7 +6,7 @@
 * If not, then this code would fetch the appropriate code based on the'Country' field value from the Lead.
 * Then this would 
 * while creating a new Lead
-* Written by iKosmik ( http://www.ikosmik.com/ , https://zohoacademy.blogspot.in )
+* Crafted with ♥ from India, iKosmik
 */
 
 // initialize an empty map
