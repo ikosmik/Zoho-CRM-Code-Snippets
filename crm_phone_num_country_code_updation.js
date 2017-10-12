@@ -1,9 +1,12 @@
-/* This Function is for the Leads module in Zoho CRM.
+/* 
+* Zoho CRM Custom Function For Lead Phone Num Country Code Updation
+* This Custom Function is for the Leads module in Zoho CRM.
 * This code is in Deluge scripting language.
 * This is used to check an incoming lead to see if their phone num has the country dialing code.
 * If not, then this code would fetch the appropriate code based on the'Country' field value from the Lead.
 * Then this would 
 * while creating a new Lead
+* Written by iKosmik ( http://www.ikosmik.com/ , https://zohoacademy.blogspot.in )
 */
 
 // initialize an empty map
