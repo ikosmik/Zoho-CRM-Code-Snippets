@@ -1,8 +1,15 @@
-/*This Function is to insert the Country Code for Phone Number (Based on the Country entered in Country Field) while creating a new Lead*/
+/* This Function is for the Leads module in Zoho CRM.
+* This code is in Deluge scripting language.
+* This is used to check an incoming lead to see if their phone num has the country dialing code.
+* If not, then this code would fetch the appropriate code based on the'Country' field value from the Lead.
+* Then this would 
+* while creating a new Lead
+*/
 
+// initialize an empty map
 update_phone_no_map=map();
 
-//Country & Phone extension Code Data Map
+// Map of countires along with their international dialing code
 data_set_extension_code={ "Afghanistan" : "93", "Albania" : "355", "Algeria" : "213", "American Samoa" : "1-684", "Andorra" : "376", "Angola" : "244", "Anguilla" : "1-264", "Antarctica" : "672", "Antigua and Barbuda" : "1-268", "Argentina" : "54", "Armenia" : "374", "Aruba" : "297", "Australia" : "61", "Austria" : "43", "Azerbaijan" : "994", "Bahamas" : "1-242", "Bahrain" : "973", "Bangladesh" : "880", "Barbados" : "1-246", "Belarus" : "375", "Belgium" : "32", "Belize" : "501", "Benin" : "229", "Bermuda" : "1-441", "Bhutan" : "975", "Bolivia" : "591", "Bosnia and Herzegowina" : "387", "Botswana" : "267", "Bouvet Island" : "47", "Brazil" : "55", "British Indian Ocean Territory" : "246", "Brunei Darussalam" : "673", "Bulgaria" : "359", "Taiwan" : "886", "Tajikistan" : "992", "United Republic of" : "255", "Thailand" : "66", "Togo" : "228", "Tokelau" : "690", "Tonga" : "676", "Tuvalu" : "688", "Uganda" : "256", "Ukraine" : "380", "United Arab Emirates" : "971", "United Kingdom" : "44", "United States" : "1", "United States Minor Outlying Islands" : "246", "Uruguay" : "598", "Uzbekistan" : "998", "Vanuatu" : "678", "Vatican City State" : "379", "Venezuela" : "58", "Vietnam" : "84", "Virgin Islands" : "1-284", "Virgin Islands" : "1-340", "Wallis and Futuna Islands" : "681", "Western Sahara" : "212", "Yemen" : "967", "Serbia" : "381", "Zambia" : "260", "Zimbabwe" : "263", "Aaland Islands" : "358", "Palestine" : "970", "Montenegro" : "382", "Guernsey" : "44-1481", "Isle of Man" : "44-1624", "Jersey" : "44-1534", "Curaçao" : "599", "Ivory Coast" : "225", "Kosovo" : "383", "Canada" : "1", "Cape Verde" : "238", "Cayman Islands" : "1-345", "Central African Republic" : "236", "Chad" : "235", "Chile" : "56", "China" : "86", "Christmas Island" : "61", "Palestine" : "970", "Madagascar" : "261", "Malawi" : "265", "Malaysia" : "60", "Maldives" : "960", "Mali" : "223", "Malta" : "356", "Spain" : "34", "Sri Lanka" : "94" };
 phone_number_sign=("+");
 
