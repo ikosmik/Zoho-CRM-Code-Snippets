@@ -6,7 +6,11 @@
 * If not, then this code would fetch the appropriate code based on the'Country' field value from the Lead.
 * Then this would update the 'Phone' field in the CRM Lead to reflect the new number which has the country code prefixed.
 *
+* Note : We added a JS extension to this file so you could see some markup! :) But this is a Deluge file. Nothing Javascript about it! ;)
+*
 * Crafted with ♥ from India, iKosmik
+* 
+* Got something to say? write to us at guru@zoho.academy
 */
 
 // initialize an empty map
